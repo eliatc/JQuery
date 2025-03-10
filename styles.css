@@ -1,0 +1,64 @@
+/* Estilo global para el body */
+body {
+    font-family: 'Abril Fatface', serif; /* Fuente moderna y elegante */
+    background-color: #f0f4f8; /* Fondo suave de gris claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #333; /* Gris oscuro para buen contraste */
+    margin-bottom: 20px;
+    max-width: 700px; /* Limita el ancho del texto para una mejor legibilidad */
+    padding: 20px;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #4CAF50; /* Fondo verde para los botones */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #45a049; /* Verde más oscuro cuando el ratón pasa */
+    transform: translateY(-2px); /* Animación de elevación */
+}
+
+/* Botones de "Ocultar" y "Mostrar" con colores distintivos */
+#ocultar-btn, #mostrar-btn {
+    background-color: #f44336; /* Rojo para los botones de ocultar/marcar */
+}
+
+#ocultar-btn:hover, #mostrar-btn:hover {
+    background-color: #8a0909; /* Rojo más oscuro */
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 600px) {
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
